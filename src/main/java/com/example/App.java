@@ -13,7 +13,7 @@ public class App {
 
         // Configure Chrome for headless execution
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--no-sandbox");         // required in Jenkins/Linux
+        options.addArguments("--headless=new");       // modern headless mode
 
         WebDriver driver = new ChromeDriver(options);
 
